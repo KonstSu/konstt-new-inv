@@ -1,0 +1,9 @@
+** sch_path: /media/sf_ASIC_Playground/konstt-new-inv/xschem/konstt-new-inv.sch
+.subckt konstt-new-inv VDD VSS out0 in0
+*.PININFO VDD:B VSS:B in0:I out0:O
+XM1 inverted in0 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 inverted in0 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 out0 inverted VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=20 m=1
+XM4 out0 inverted VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=20 m=1
+.ends
+.end

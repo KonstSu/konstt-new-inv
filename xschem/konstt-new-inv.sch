@@ -87,9 +87,9 @@ C {devices/lab_wire.sym} 290 -470 0 0 {name=p4 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 290 -180 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 540 -380 0 0 {name=M3
 L=0.15
-W=1
+W=20
 nf=20
-mult=20
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -101,9 +101,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 540 -260 0 0 {name=M4
 L=0.15
-W=1
+W=20
 nf=20
-mult=20
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
