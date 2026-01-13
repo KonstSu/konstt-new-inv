@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=4e-07
+x1=-3.022489e-07
+x2=1.6204472e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -53,7 +53,7 @@ value="
 
 "
 spice_ignore=false}
-C {devices/launcher.sym} 1160 -490 0 0 {name=h17 
+C {devices/launcher.sym} 1150 -490 0 0 {name=h17 
 descr="Load waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
@@ -86,9 +86,9 @@ simulator=ngspice
 only_toplevel=false 
 value="
 * ngspice commands
-vin in 0 pulse 0 1.8 5n 1n 1n 50n 100n
+vin in 0 pulse 0.8 1 500n 100n 100n 5u 10u
 .control
-tran 100p 200n
+tran 10n 20u
 write testbench.raw
 .endc
 
